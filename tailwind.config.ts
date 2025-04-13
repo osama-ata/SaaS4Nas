@@ -6,6 +6,9 @@ const config = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        arshid: ['Arshid', 'sans-serif'],
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
@@ -59,6 +62,12 @@ const config = {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+      },
+      utilities: {
+        '.icon-saudi_riyal': {
+          fontFamily: 'Arshid',
+          content: '\fdfc', /* Unicode for the Saudi Riyal symbol */
+        },
       },
     },
   },

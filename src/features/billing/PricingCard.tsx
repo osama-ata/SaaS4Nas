@@ -1,3 +1,5 @@
+import '@emran-alhaddad/saudi-riyal-font/index.css';
+
 import { useTranslations } from 'next-intl';
 import React from 'react';
 
@@ -19,8 +21,9 @@ export const PricingCard = (props: {
       </div>
 
       <div className="mt-3 flex items-center justify-center">
-        <div className="text-5xl font-bold">
-          {`$${props.price}`}
+        <div className="font-arshid text-5xl">
+          <span className="icon-saudi_riyal"></span>
+          {props.price}
         </div>
 
         <div className="ml-1 text-muted-foreground">

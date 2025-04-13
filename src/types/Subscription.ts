@@ -29,10 +29,19 @@ export type PricingPlan = {
   devPriceId: string;
   prodPriceId: string;
   features: {
-    teamMember: number;
-    website: number;
-    storage: number;
-    transfer: number;
+    jobApplications?: number | 'unlimited';
+    resumeBuilder?: boolean;
+    saveJobAlerts?: boolean;
+    basicAIJobSuggestions?: boolean;
+    priorityCVPlacement?: boolean;
+    viewCVViews?: boolean;
+    addPortfolio?: boolean;
+    addReferences?: boolean;
+    resumeReviewAI?: boolean;
+    videoCVSpotlight?: boolean;
+    mockInterviewCoaching?: boolean;
+    verifiedSkills?: number;
+    certificationBadge?: boolean;
   };
 };
 
